@@ -1,0 +1,106 @@
+/* Admin Panel Styles */
+.admin-tools {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.import-export {
+    display: flex;
+    gap: 10px;
+}
+
+.admin-posts-list {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.admin-post-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.admin-post-item:last-child {
+    border-bottom: none;
+}
+
+.admin-post-info h4 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+}
+
+.post-date {
+    font-size: 12px;
+    color: #777;
+    margin: 0;
+}
+
+.admin-post-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-edit, .btn-delete {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.btn-edit {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-delete {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: #3e8e41;
+}
+
+.btn-delete:hover {
+    background-color: #d32f2f;
+}
+
+/* Dark mode compatibility */
+.dark-mode .admin-posts-list {
+    border-color: #444;
+}
+
+.dark-mode .admin-post-item {
+    border-color: #444;
+}
+
+.dark-mode .search-container input {
+    background-color: #333;
+    color: #fff;
+    border-color: #444;
+}
+
+.dark-mode .post-date {
+    color: #aaa;
+}
